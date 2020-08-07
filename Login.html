@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+          
+            body{
+                    margin: 0;
+                    padding: 0;
+                    background-image:url("6997243-nature-backgrounds.jpg");
+                    background-size: cover;
+                    font-family: sans-serif;
+                    	
+            }
+            
+            .loginbox{
+                position: absolute;
+                top: 50%;
+                left : 50%; 
+                transform: translate(-50%, -50%);
+                width: 350px;
+                height: 420px; 
+                padding: 80px 40px;
+                box-sizing: border-box;
+                background: rgba(0,0,0,0.4);
+            }
+            
+            h2{
+                    margin: 0;
+                    padding: 0 0 20px;
+                    color: white;
+                    text-align: center;
+            }
+            
+            .loginbox p
+            {
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+            
+            .loginbox input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            .loginbox input[type = "text"] , .loginbox input[type = "password"]{
+                    border: none;
+                    border-bottom: 2px solid #fff;
+                    background: transparent;
+                    outline: none;
+                    height: 40px;
+                    color: #fff;
+                    font-size: 16px;
+            }
+            
+            .loginbox input[type = "submit"]{
+                border: none;
+                outline: none;
+                height: 40px;
+                color: #fff;
+                font-size: 16px;
+                background: #ff9900;
+                cursor: pointer;
+                border-radius: 20px;
+            }
+            
+            .loginbox input[type="submit"]:hover
+            {
+                background: #ffff66;
+                color: black;
+            }
+            
+            .loginbox a{
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            
+            ::placeholder{
+                color: rgba(255,255,255,0.8);
+            }
+            
+            
+        </style>   
+    </head>
+<body>
+        <div class ="loginbox"> 
+            <h2> Login here</h2>
+        <form method="post" action="php1.php"> 
+            
+            <p style="color: white">Userame</p> 
+                <input type="text" name="name" value="" placeholder="Enter username" />
+                <p style="color: white">Password</p>
+                <input type="password" name="password" value="" placeholder="•••••••••••••" /><br>
+                <input type="submit" value="Log in" /><br>
+                <a href="#"> Forget Password?</a>
+           
+        </form>  
+       </div>
+</body>
+</html>
